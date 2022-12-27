@@ -1,3 +1,39 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
 .nav-link {
   font-size: large;
 }
+
+.business-profile-root{
+  /* background: red; */
+  background: #F1F5FF;
+  font:"Proxima Nova"
+}
+
+.cardBtn{
+position: relative;
+color:white;
+width: fit-content;
+max-width: fit-content;
+min-width: 7rem;
+height: 2.5rem;
+background: #FF2E59;
+border: 1px solid #FF2E59;
+border-radius: 8px;
+font-size: 16px;
+font-weight: 700;
+}
+
+.cardTitle{
+  color: #1F1C47;
+  letter-spacing: -0.02em;
+}
+
+.cardText{
+  color: #554E4E;
+  letter-spacing: -0.01em;
+  font-size: 14px;
+  font-weight: 400;
+}
+

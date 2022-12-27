@@ -1,0 +1,23 @@
+<div class="col">
+  <div class="card h-100 rounded"
+       style="width: 17rem;">
+    <div class="card-body card2Body p-3 pb-4">
+      <h4 class="card-title cardTitle mb-3">Let's start your selling journey</h4>
+      <p class="card-text cardText pr-3 mb-4">After creating your business profile you can publish your listing and get immediate
+        access to thousands of verified buyers on the Eden Exchange network</p>
+      <div class="d-flex flex-nowrap justify-content-between gap-2 mt-1 mb-1">
+      <button class="cardBtn"
+              [disabled]= 'isDisabled'
+              [style.opacity]="opacityValue">
+        Get Started
+      </button>
+      <p class=" text-danger d-flex flex-wrap justify-content-between mb-0 px-2"
+         style="font-size: 12px">
+        <i class="fa fa-exclamation-triangle text-danger " 
+           aria-hidden="true"></i>
+       <small>{{warningText}}</small>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>

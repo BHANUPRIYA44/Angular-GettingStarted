@@ -1,0 +1,7 @@
+.card3Body {
+    background: rgba(46, 105, 255, 0.1);
+    border: 1px solid #2E69FF;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #554E4E
+}
