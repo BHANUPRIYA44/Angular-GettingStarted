@@ -1,6 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.min.css";
 
+/* dont make changes here...if made check for the components ..if the alignment changes */
+/* no changes here */
 .nav-link {
   font-size: large;
 }
@@ -24,11 +26,26 @@ border-radius: 8px;
 font-size: 16px;
 font-weight: 700;
 }
-
+/* no changes here */
+ 
+/* convert the below one  to scss so the no of lines will reduce */
+/* from here ----> */
 .cardTitle{
   color: #1F1C47;
   letter-spacing: -0.02em;
 }
+/* .cardTitle.ct-14{
+  color: #1F1C47;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+}
+.cardTitle.ct-16{
+  color: #1F1C47;
+  letter-spacing: -0.02em;
+  font-size: 14px;
+} */
+/* <--- until here */
+
 
 .cardText{
   color: #554E4E;
