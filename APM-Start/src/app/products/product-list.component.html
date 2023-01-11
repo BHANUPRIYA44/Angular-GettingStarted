@@ -1,0 +1,83 @@
+<div class="card">
+    <div class="card-header">
+        Product List 
+        {{pageTitle}}
+    </div>
+    <div class="card-body">
+        <div class="row"> 
+         <div class="col-md-2">Filter By:</div>
+            <div class="col-md-4">
+                <input type="text"
+                       [(ngModel)]='listFilter' />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Filterd By: {{listFilter}}</h4>
+            </div>
+        </div>
+        table
+        <div class="table-responsive">
+        <table class="table"
+                   *ngIf="products.length">
+                <thead>
+                    <tr>
+                        <th>
+                            <button class="btn btn-primary"
+                                    (click)="toggleImage()">
+                                {{showImage ? 'Hide' :'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Product</th>
+                        <th>Code</th>
+                        <th>Available</th>
+                        <th>Price</th>
+                        <th>5 Star Rating</th>
+                    </tr>
+                </thead>
+        <tbody>
+        <tr *ngFor="let product of filteredProducts">
+        <td>
+                            <img *ngIf='showImage'
+                                 [src]='product.imageUrl'
+                                 [title]='product.productName'
+                                 [style.width.px]='imageWidth'
+                                 [style.margin.px]='imageMargin'>
+                        </td>
+                        <td>{{product.productName | uppercase}}</td>
+                        <td>{{product.productCode | lowercase | convertToSpaces: '-'}}</td>
+        <td>{{product.releaseDate}}</td>
+        <td> 
+                            <!-- <pm-star [rating]='product.releaseDate'  -->
+                            <!-- (ratingClicked)="onRatingClicked($event)"></pm-star> -->
+                        </td>
+                       
+                        <td>{{product.price | currency : 'USD' :'symbol': '1.2-2' }}</td>
+        <td>{{product.price | currency | lowercase}}</td>
+        <td>{{product.starRating}}</td>
+        [rating]="product.starRating"
+        <td>
+                            <!-- <pm-star [rating]='product.starRating'></pm-star> -->
+                        </td>
+        </tr>
+        </tbody>
+        </table>
+
+        </div>
+    </div>
+</div>
+
+<!-- <div style="background-color: #afeed826">
+     Second component BP- percentage -->
+    <!-- <div class="m-4  p-2 d-flex w-25">
+        <div  class= "p-1  w-25" style="background-color: green; border-radius: 7px 0px 0px 7px;"></div>
+        <div  class= "p-1 w-50" style="background-color: lightgray;border-radius: 0px 7px 7px 0px;"></div>
+    </div> -->
+    
+    <!-- first component Business Profile -->
+    <!-- <div class="p-3 d-flex align-items-center justify-content-evenly" > -->
+        <!-- <bp-component></bp-component>
+    </div>
+</div>  -->
+
+<!-- 26/12  -->

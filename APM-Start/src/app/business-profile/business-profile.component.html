@@ -1,0 +1,74 @@
+<!-- <div class="card-group"> -->
+<div class="row row-cols-1 row-cols-md-3 g-4">
+ 
+<!-- <div class="col">
+    <div class="card border-light h-100"
+         style="max-width: 20rem;">
+       <div class="card-header">Header</div> -->
+      <!-- <div class="card-body text-primary"> -->
+      <!-- <div class="card-body ">
+        <h5 class="card-title mb-4">Hello {{name}}!
+          Let's start building your business Profile
+        </h5>
+        <p class="card-text mb-4">Some quick example text to build on the card title and make up the bulk of the card's
+          content.With supporting text below as a natural lead-in to additional content
+        </p>
+        <p class="card-text mb-5">With supporting text below as a natural lead-in to additional content</p>
+        <button *ngIf='ifButton'
+                class="btn btn btn-danger">
+          Click
+        </button>
+      </div>
+    </div>
+  </div> --> 
+
+  <div class="col">
+    <div class="card h-100 border-success"
+         style="width: 18rem;">
+      <div class="card-body" style="background-color: #4ac3c121">
+        <!-- <div class="card-body" style="background-color: #33BEFF;"> -->
+        <h5 class="card-title  mb-4">Let's start your selling journey</h5>
+        <p class="card-text mb-5">With supporting text below as a natural lead-in to additional content.</p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        <!-- <div> -->
+        <!-- <div class="d-flex p-2"> -->
+          <button class="btn btn-danger"
+                  [disabled]=true
+                  style="opacity: 0.3;">
+            Get Started
+          </button>
+          <!-- <div class="d-inline-flex justify-content-center align-items-center p-2"> -->
+          <!-- <div class="d-inline-flex p-2"> -->
+          <p class=" text-danger"  style="display:inline">
+            <i class="fa fa-exclamation-triangle text-danger"
+               aria-hidden="true"></i>
+            <small>{{warningText}}</small>
+          </p>
+          <!-- <btn-component></btn-component> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100 border-primary"
+         style="width: 18rem;">
+      <div class="card-body" style="background-color: #63b5ec3b">
+        <h5 class="card-title  mb-4">Get Verified</h5>
+        <p class="card-text mb-5">With supporting text below as a natural lead-in to additional content.</p>
+        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        <button class="btn btn btn-danger mb-3 mt-3">
+          Learn More
+        </button>
+        <i *ngIf='ifWarning'
+           class="fa fa-exclamation-triangle"
+           aria-hidden="true"></i>
+        <p *ngIf='ifWarning'
+           class="text-danger"><small>{{warningText}}</small></p>
+        <btn-component></btn-component>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->
